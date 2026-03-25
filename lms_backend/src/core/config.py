@@ -14,6 +14,7 @@ class Settings:
     access_token_expires_minutes: int = 60 * 24  # 24h
 
     # SQLite database file path. This must point at the db file created by lms_database.
+    # Default filename matches lms_database/init_db.py (DB_NAME = "myapp.db").
     sqlite_db_path: str = os.getenv("SQLITE_DB_PATH", "myapp.db")
 
     # CORS
